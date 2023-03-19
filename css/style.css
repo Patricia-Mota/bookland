@@ -1,0 +1,289 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/* Estilos del Header */
+header{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+/* Estilos nav */
+.navbar {
+    text-align: center;
+    max-width: 1268px;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 10px;
+}
+.link-navbar {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1F3F66;
+}
+
+
+/* Estilos de la sección principal */
+
+section {
+    height: 100vh;
+}
+
+.hero-image-home img {
+    width: 100%;
+    max-width: 298px;
+}
+
+#hero-home {
+    width: 100%;
+    position: relative;
+}
+
+.hero-text-wrapper {
+    width: 100%;
+    max-width: 585px;
+}
+
+.title-hero-home {
+    font-size: 44px;
+    font-weight: bold;
+    color: #1F3F66;
+    margin-bottom: 8px;
+}
+
+.cta-btn {
+    background-color: #1F3F66 !important;
+    margin-top: 40px;
+}
+
+.hero-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+#hero-wavy-light-blue {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+#hero-wavy-dark-blue {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#hero-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.paragraph-section {
+    font-size: 16px;
+    font-weight: regular;
+    color: #424242;
+    margin: 8px 0 0 0;
+}
+
+/* Section Novedades */
+
+#section-novedades {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.N-text-wrapper {
+    width: 100%;
+    max-width: 409px;
+}
+
+.N-books-wrapper {
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+}
+.N-book-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book-cover {
+    width: 250px;
+    height: 312px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.book-name {
+    font-weight: 700;
+    margin-top: 16px;
+}
+.book-author {
+    margin-top: 8px;
+}
+.book-price {
+    margin-top: 24px;
+}
+
+.N-wavy-light-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+#N-wavy-light-blue {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Section descuentos */
+
+#section-descuentos {
+    width: 100%;
+    position: relative;
+}
+
+.D-text-wrapper {
+    max-width: 521px;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F3F66
+}
+
+.D-img {
+    width: 539px;
+    height: 418px;
+}
+
+.D-dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+#D-dots {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Section: Bestsellers */
+#section-best-sellers {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#BS-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+#BS-left-wavy-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#BS-right-wavy-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Section: Article Blog */
+#section-article-blog {
+    width: 100%;
+    position: relative;
+}
+
+.AB-text-wrapper{
+    max-width: 578px;
+}
+.AB-img {
+    width: 430px;
+    height: 334px;
+}
+
+.AB-circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+#AB-circles {
+    position: absolute;
+    left: 44px;
+    bottom: 0;
+}
+/* Section: Comentarios Clientes */
+#section-comentarios-clientes {
+    width: 100%;
+    position: relative;
+}
+
+.CC-text-wrapper {
+    width: 100%;
+    max-width: 454px;
+}
+
+.CC-reviews {
+    background-color: #1F3F66;
+    width: 100%;
+    height: 100%;
+}
+.CC-wavy-light-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+#CC-wavy-light-blue {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.color-dark-blue {
+    color: #1F3F66;
+}
+
+.copyright-wrapper {
+    margin-top: 58px;
+}
+
+/* Estilos del Footer */
+
+footer {
+    padding: 56px 0 40px;
+    background: white;
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.25);
+}
