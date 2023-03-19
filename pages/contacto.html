@@ -54,29 +54,42 @@
 
         <main>
 
-            <section>
-                <h1>
-                    Contacta con nosotros o visítanos en nuestra sucursal del Centro
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae officia vero, eveniet laborum rem expedita nostrum! Cum vel deleniti laboriosam voluptate neque consequuntur? Dolores impedit iure maxime earum a quo?
-                </p>
+            <section id="contacto-ubicacion">
+                <div class="d-flex align-items-center h-100 justify-content-around">
+                    <div class="D-text-wrapper">
+                        <h1 class="title-contacto">
+                            Contacta con nosotros o visítanos en nuestra sucursal del Centro
+                        </h1>
+                        <p>
+                            ¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría saber de ti! Puedes ponerte en contacto con nuestro equipo de atención al cliente en cualquier momento a través de nuestro formulario de contacto en línea. ¡Gracias por elegir Bookland en línea y esperamos poder ayudarte pronto!
+                        </p>
+                    </div>
+                    <div class="contacto-mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
 
-                <div>
+                <div class="contacto-wavy">
+                    <img id="contacto-wavy" src="../assets/img/SVGs/hero-wavy-shape-light-blue.svg" alt="Wavy light blue">
+                </div>
+            </section>
+
+            <section id="section-contacto-formulario">
+                <div class="contacto-formulario-wrapper">
                     <form action="">
                         <div>
-                            <label for="">Nombre</label>
-                            <input type="text" placeholder="Escribe tu nombre" required>
+                            <label for="" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Escribe tu nombre" id="form-contacto-name" required>
                         </div>
 
                         <div>
-                            <label for="">Apellido</label>
-                            <input type="text" placeholder="Escribe tu apellido" required>
+                            <label for="" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Escribe tu apellido" id="form-contacto-last-name" required>
                         </div>
 
                         <div>
-                            <label for="">Email</label>
-                            <input type="email" placeholder="Escribe tu email" required>
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Escribe tu email" id="form-contacto-email" required>
                         </div>
 
                         <div>
@@ -84,19 +97,11 @@
                         </div>
 
                         <div>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Limpiar">
+                            <button type="submit" class="btn btn-primary cta-btn">Enviar</button>
+                            <button class="btn btn-primary cta-btn">Limpiar</button>
                         </div>
                     </form>
                 </div>
-            </section>
-
-            <section>
-                <h2>Ubicación de la tienda física</h2>
-            </section>
-
-            <section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
         </main>
