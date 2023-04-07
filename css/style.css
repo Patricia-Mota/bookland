@@ -8,6 +8,8 @@
     font-family: 'Poppins';
 }
 
+
+
 /* Estilos del Header */
 header{
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
@@ -33,6 +35,13 @@ header{
     color: #1F3F66;
 }
 
+/* Estilos del body */
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
 
 /* Estilos de la sección principal */
 
@@ -42,17 +51,28 @@ section {
 
 .hero-image-home img {
     width: 100%;
-    max-width: 298px;
+    max-width: 400px;
 }
 
 #hero-home {
-    width: 100%;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: calc(100vh - 60px);
+    width: 100%;
 }
 
 .hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     width: 100%;
+}
+
+.hero-text-wrapper div:first-child{
     max-width: 585px;
+
 }
 
 .title-hero-home {
@@ -62,13 +82,19 @@ section {
     margin-bottom: 8px;
 }
 
-#atomic-habits-img {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.hero-image-home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
 }
 
 .book-image {
     object-fit: cover;
     height: 100%;
+    box-shadow: 5px 6px 5px 1px rgba(0,0,0,0.31);
 }
 .cta-btn {
     background-color: #1F3F66;
@@ -82,23 +108,22 @@ section {
     background-color: #9CBFE9 !important;
 }
 
-.hero-shapes {
+.hero-dots-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-wavys-wrapper {
+    position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    top: 0;
-}
-#hero-wavy-light-blue {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    background-image: url("../assets/img/SVGs/hero-wavy-shapes.svg");
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
     z-index: -2;
-}
-#hero-wavy-dark-blue {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
 }
 
 #hero-dots {
@@ -143,12 +168,13 @@ section {
 .book-cover {
     width: 250px;
     height: 312px;
-    border-radius: 40px;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
 }
 .book-name {
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F3F66;
     margin-top: 16px;
     text-align: center;
 }
@@ -156,6 +182,8 @@ section {
     margin-top: 8px;
 }
 .book-price {
+    font-size: 24px;
+    color: #1F3F66;
     margin-top: 24px;
 }
 
@@ -175,26 +203,45 @@ section {
 /* Section descuentos */
 
 #section-descuentos {
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+.D-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    position: relative;
+}
+
+.D-img img {
+    width: 684px;
+    height: 684px;
+    bottom: -30px;
 }
 
 .D-text-wrapper {
-    max-width: 521px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.D-text-wrapper div:first-child {
+    max-width: 529px;
 }
 
 .subtitle {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     color: #1F3F66
 }
 
-.D-img {
-    width: 539px;
-    height: 418px;
-}
-
-.D-dots {
+.D-big-dark-blue-wavy-wrapper{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -202,10 +249,28 @@ section {
     top: 0;
     z-index: -2;
 }
-#D-dots {
+
+#D-big-dark-blue-wavy{
+    width: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.D-big-light-blue-wavy{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+}
+
+#D-big-light-blue-wavy{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: -32px;
 }
 
 /* Section: Bestsellers */
@@ -236,16 +301,38 @@ section {
 
 /* Section: Article Blog */
 #section-article-blog {
-    width: 100%;
-    position: relative;
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
 }
 
+
+
 .AB-text-wrapper{
-    max-width: 578px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.AB-img {
-    width: 430px;
-    height: 334px;
+
+.AB-text-wrapper div:first-child {
+    max-width: 529px;;
+}
+
+
+.AB-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    overflow: hidden;
+}
+
+.AB-image {
+    object-fit: cover;   
 }
 
 .AB-circles {
@@ -254,10 +341,11 @@ section {
     height: 100%;
     overflow: hidden;
     top: 0;
+    z-index: -2;
 }
 #AB-circles {
     position: absolute;
-    left: 44px;
+    left: 1150px;
     bottom: 0;
 }
 /* Section: Comentarios Clientes */
