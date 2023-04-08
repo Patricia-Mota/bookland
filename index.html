@@ -25,52 +25,65 @@
 
   <body>
     <!-- Cabecera -->
-    <header class="header d-flex justify-content-around">
-      <!-- Lista desordenada de navagación -->
-      <nav
-        class="navbar d-flex justify-content-around align-items-center w-100"
-      >
-        <div>
-          <a href="#">
+    <header>
+
+      <nav class="navbar navbar-expand-md">
+        
+        <div class="container fluid">
+          <!-- Logotipo -->  
+          <a class="navbar-brand" href="#">
             <img
               src="./assets/img/Logo/blue-logo.svg"
               width="100px"
               alt="Logo Bookland"
             />
           </a>
+
+          <!-- Botón del menú -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Elementos del menú colapsable -->
+          <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav me-auto d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <div>|</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/libros.html">Libros</a>
+                </li>
+                <div>|</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/autores.html">Autores</a>
+                </li>
+                <div>|</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+                <div>|</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/blog.html">Blog</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+                <img
+                    src="./assets/img/Iconos/carrito.svg"
+                    width="24px"
+                    alt="Carrito de compra"
+                />
+                <p class="mb-0 ms-4">Mi cuenta</p>
+            </div>
+
+          </div>
+
         </div>
-        <ul
-          class="navbar-menu color-dark-blue d-flex justify-content-evenly w-50"
-        >
-          <li>
-            <a class="link-navbar" href="#">Inicio</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./pages/libros.html">Libros</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./pages/autores.html">Autores</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./pages/contacto.html">Contacto</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./pages/blog.html">Blog</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center">
-          <img
-            src="./assets/img/Iconos/carrito.svg"
-            width="24px"
-            alt="Carrito de compra"
-          />
-          <p class="mb-0 ms-4">Mi cuenta</p>
-        </div>
+
       </nav>
+
     </header>
 
     <!-- Contenido principal -->
@@ -111,15 +124,18 @@
       <!-- Section: Novedades -->
       <section id="section-novedades">
         <div class="N-text-wrapper">
-          <h2 class="subtitle">Novedades</h2>
-          <p class="paragraph-section">
-            Encuentra la próxima lectura que te obsesionará y mantente al día
-            con nuestras últimas novedades en libros de todos los géneros.
-          </p>
-          <button type="button" class="btn btn-primary cta-btn">
-            Ir a Novedades
-          </button>
+            <div>
+                <h2 class="subtitle">Novedades</h2>
+                <p class="paragraph-section">
+                    Encuentra la próxima lectura que te obsesionará y mantente al día
+                    con nuestras últimas novedades en libros de todos los géneros.
+                </p>
+                <button type="button" class="btn btn-primary cta-btn">
+                    Ir a Novedades
+                </button>
+            </div>
         </div>
+
         <div class="N-books-wrapper">
           <div class="N-book-card">
             <div class="book-cover">
@@ -212,66 +228,71 @@
 
       <!-- Section: Best Sellers -->
       <section id="section-best-sellers">
+
         <div class="N-text-wrapper">
-          <h2 class="subtitle">Bestsellers</h2>
-          <p class="paragraph-section">
-            No te pierdas nuestros libros más vendidos de todos los tiempos y
-            descubre por qué son los favoritos de nuestros clientes.
-          </p>
-          <button type="button" class="btn btn-primary cta-btn">
-            Ir a Bestsellers
-          </button>
+
+          <div>  
+            <h2 class="subtitle">Bestsellers</h2>
+            <p class="paragraph-section">
+                No te pierdas nuestros libros más vendidos de todos los tiempos y
+                descubre por qué son los favoritos de nuestros clientes.
+            </p>
+            <button type="button" class="btn btn-primary cta-btn">
+                Ir a Bestsellers
+            </button>
+          </div>  
+
         </div>
+
         <div class="N-books-wrapper">
-          <div class="N-book-card">
-            <div class="book-cover">
-              <img
-                class="book-image"
-                src="./assets/img/Libros/the-design-of-everyday-things.jpeg"
-                alt="Cover del libro 'El diseño de las cosas cotidianas'"
-              />
+            
+            <div class="N-book-card">
+                <div class="book-cover">
+                <img
+                    class="book-image"
+                    src="./assets/img/Libros/the-design-of-everyday-things.jpeg"
+                    alt="Cover del libro 'El diseño de las cosas cotidianas'"
+                />
+                </div>
+                <div class="book-name">The Design of Everyday Things</div>
+                <div class="book-author">Donald Norman</div>
+                <div class="book-price">$ 625.00 MXN</div>
             </div>
-            <div class="book-name">The Design of Everyday Things</div>
-            <div class="book-author">Donald Norman</div>
-            <div class="book-price">$ 625.00 MXN</div>
-          </div>
-          <div class="N-book-card">
-            <div class="book-cover">
-              <img
-                class="book-image"
-                src="./assets/img/Header/atomic-habits-img-2.png"
-                alt="Cover del libro 'Hábitos atómicos'"
-              />
+            <div class="N-book-card">
+                <div class="book-cover">
+                <img
+                    class="book-image"
+                    src="./assets/img/Header/atomic-habits-img-2.png"
+                    alt="Cover del libro 'Hábitos atómicos'"
+                />
+                </div>
+                <div class="book-name">Hábitos atómicos</div>
+                <div class="book-author">James Clear</div>
+                <div class="book-price">$ 299.00 MXN</div>
             </div>
-            <div class="book-name">Hábitos atómicos</div>
-            <div class="book-author">James Clear</div>
-            <div class="book-price">$ 299.00 MXN</div>
-          </div>
-          <div class="N-book-card">
-            <div class="book-cover">
-              <img
-                class="book-image"
-                src="./assets/img/Libros/por-que-dormimos.jpeg"
-                alt="Cover del libro '¿Por qué dormimos?'"
-              />
+            <div class="N-book-card">
+                <div class="book-cover">
+                <img
+                    class="book-image"
+                    src="./assets/img/Libros/por-que-dormimos.jpeg"
+                    alt="Cover del libro '¿Por qué dormimos?'"
+                />
+                </div>
+                <div class="book-name">¿Por qué dormimos?</div>
+                <div class="book-author">Matthew Walker</div>
+                <div class="book-price">$ 360.00 MXN</div>
             </div>
-            <div class="book-name">¿Por qué dormimos?</div>
-            <div class="book-author">Matthew Walker</div>
-            <div class="book-price">$ 360.00 MXN</div>
-          </div>
+
         </div>
 
         <div class="BS-shapes">
-          <img
-            id="BS-left-wavy-shape"
-            src="./assets/img/SVGs/BS-left-wavy-shape.svg"
-            alt="Left wavy shape"
-          />
+          
           <img
             id="BS-right-wavy-shape"
             src="./assets/img/SVGs/BS-right-wavy-shape.svg"
             alt="Right wavy shape"
           />
+          
         </div>
       </section>
 
@@ -306,6 +327,7 @@
             alt="Circles"
           />
         </div>
+
       </section>
 
       <!-- Section: Comentarios Clientes -->
@@ -354,7 +376,7 @@
             <div class=review-impar-photo>
                 <div class="review-impar">
                     <p class="comment-annette-black">
-                        “Booklandr tiene una selección increíble de libros a precios muy competitivos. El proceso de compra es sencillo y el envío es rápido.”
+                        “Bookland tiene una selección increíble de libros a precios muy competitivos. El proceso de compra es sencillo y el envío es rápido.”
                     </p>
 
                     <p class="name-costumer">

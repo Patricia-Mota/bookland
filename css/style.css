@@ -43,7 +43,7 @@ body {
 
 
 
-/* Estilos de la sección principal */
+/* Estilos de la Hero Home */
 
 section {
     height: 100vh;
@@ -72,7 +72,6 @@ section {
 
 .hero-text-wrapper div:first-child{
     max-width: 585px;
-
 }
 
 .title-hero-home {
@@ -140,31 +139,53 @@ section {
     margin: 8px 0 0 0;
 }
 
+/* Responsive de la Hero Home */
+@media screen and (max-width: 768px) {
+    #hero-home {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 /* Section Novedades */
 
 #section-novedades {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    height: 100vh;
 }
 
 .N-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     width: 100%;
+}
+
+.N-text-wrapper div:first-child {
     max-width: 409px;
 }
 
 .N-books-wrapper {
     display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
     gap: 40px;
     overflow: hidden;
 }
+
 .N-book-card {
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .book-cover {
     width: 250px;
     height: 312px;
@@ -178,9 +199,11 @@ section {
     margin-top: 16px;
     text-align: center;
 }
+
 .book-author {
     margin-top: 8px;
 }
+
 .book-price {
     font-size: 24px;
     color: #1F3F66;
@@ -199,6 +222,16 @@ section {
     left: 0;
     bottom: 0;
 }
+
+/* Responsive de la Sección Novedades */
+@media screen and (max-width: 768px) {
+    #section-novedades {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 /* Section descuentos */
 
@@ -273,12 +306,23 @@ section {
     bottom: -32px;
 }
 
+/* Responsive de la Sección Descuentos */
+@media screen and (max-width: 768px) {
+    #section-descuentos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 /* Section: Bestsellers */
 #section-best-sellers {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
 }
 
 #BS-shapes {
@@ -288,16 +332,22 @@ section {
     overflow: hidden;
     top: 0;
 }
-#BS-left-wavy-shape {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+
 #BS-right-wavy-shape {
     position: absolute;
     right: 0;
     bottom: 0;
 }
+
+/* Responsive de la Sección Best Sellers */
+@media screen and (max-width: 768px) {
+    #section-best-sellers {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 /* Section: Article Blog */
 #section-article-blog {
@@ -349,6 +399,18 @@ section {
     left: 1150px;
     bottom: 0;
 }
+
+/* Responsive de la Sección Article Blog */
+@media screen and (max-width: 768px) {
+    #section-article-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 /* Section: Comentarios Clientes */
 #section-comentarios-clientes {
     position: relative; 
@@ -423,6 +485,16 @@ section {
     margin-top: 58px;
 }
 
+/* Responsive de la Sección Comentarios Clientes */
+@media screen and (max-width: 768px) {
+    #section-comentarios-clientes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 /* Estilos del Footer */
 
 footer {
@@ -455,6 +527,9 @@ footer {
     margin: 0;
     transform: translateX(-32px);
 }
+
+
+
 
 /* Estilos página de contacto */
 
@@ -585,8 +660,26 @@ footer {
     margin-bottom: 80px;
 }
 
-/* Media Queries */
+
+/* Responsive de la Página de Contacto 
+Sección Contacto Ubicación */
+
 @media screen and (max-width: 768px) {
-    
+    #contacto-ubicacion {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
+
+/* Responsive de la Página de Contacto 
+Sección Contacto Formulario */
+
+@media screen and (max-width: 768px) {
+    #section-contacto-formulario {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
     
