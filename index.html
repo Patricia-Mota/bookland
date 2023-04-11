@@ -27,7 +27,7 @@
     <!-- Cabecera -->
     <header>
 
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-lg">
         
         <div class="container fluid">
           <!-- Logotipo -->  
@@ -47,7 +47,7 @@
           <!-- Elementos del menú colapsable -->
           <div class="collapse navbar-collapse" id="menu">
 
-            <ul class="navbar-nav me-auto d-flex align-items-center">
+            <ul class="ul-gap navbar-nav mb-2 mb-lg-0 justify-content-center align-items-center w-75">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Inicio</a>
                 </li>
@@ -69,7 +69,7 @@
                 </li>
             </ul>
 
-            <div class="d-flex align-items-center">
+            <div class="carrito-mi-cuenta-wrapper d-flex align-items-center">
                 <img
                     src="./assets/img/Iconos/carrito.svg"
                     width="24px"
@@ -88,316 +88,321 @@
 
     <!-- Contenido principal -->
     <main>
-      <!-- Section: Hero Home -->
-      <section id="hero-home">
-        <!-- <div class="d-flex align-items-center h-100 justify-content-around"> -->
-        <div class="hero-text-wrapper">
-          <div>
-            <h1 class="title-hero-home">
-              Descubre nuevas historias y conocimientos
-            </h1>
-            <p class="paragraph-section m-0">
-              Amplía tu biblioteca personal con nuestra gran selección de
-              títulos de diferentes géneros.
-            </p>
-            <button class="btn btn-primary cta-btn">Explorar ahora</button>
-          </div>
-          <div class="hero-dots-wrapper">
-            <img
-              id="hero-dots"
-              src="./assets/img/SVGs/hero-dots.svg"
-              alt="Dots"
-            />
-          </div>
-        </div>
-        <div class="hero-image-home">
-          <img
-            id="atomic-habits-img"
-            src="./assets/img/Header/atomic-habits-book-cover.png"
-            alt="atomic-habits-book-cover"
-          />
-          <div class="hero-wavys-wrapper"></div>
-        </div>
-        <!-- </div> -->
-      </section>
+      <!-- <div class="container"> -->
+        <!-- Section: Hero Home -->
+          <section id="hero-home">
+            <!-- <div class="d-flex align-items-center h-100 justify-content-around"> -->
+            <div class="hero-text-wrapper">
+              <div>
+                <h1 class="title-hero-home">
+                  Encuentra el libro perfecto para ti            
+                </h1>
+                <div class="home-paragraph-wrapper">
+                  <p class="paragraph-section m-0">
+                    En Bookland encontrarás una gran variedad de libros, desde los clásicos hasta los más modernos. Nuestro objetivo es ofrecerte la mejor experiencia de compra.
+                  </p>
+                </div>
+                <button class="btn btn-primary cta-btn">Explorar ahora</button>
+              </div>
+              <div class="hero-dots-wrapper">
+                <img
+                  id="hero-dots"
+                  src="./assets/img/SVGs/hero-dots.svg"
+                  alt="Dots"
+                />
+              </div>
+            </div>
+            <div class="hero-image-home">
+              <img
+                id="atomic-habits-img"
+                src="./assets/img/Header/atomic-habits-book-cover.png"
+                alt="atomic-habits-book-cover"
+              />
+              <div class="hero-wavys-wrapper"></div>
+            </div>
+            <!-- </div> -->
+          </section>
 
-      <!-- Section: Novedades -->
-      <section id="section-novedades">
-        <div class="N-text-wrapper">
-            <div>
-                <h2 class="subtitle">Novedades</h2>
-                <p class="paragraph-section">
-                    Encuentra la próxima lectura que te obsesionará y mantente al día
-                    con nuestras últimas novedades en libros de todos los géneros.
+          <!-- Section: Novedades -->
+          <section id="section-novedades">
+            <div class="N-text-wrapper">
+                <div>
+                    <h2 class="subtitle">Novedades</h2>
+                    <p class="paragraph-section">
+                        Encuentra la próxima lectura que te obsesionará y mantente al día
+                        con nuestras últimas novedades en libros de todos los géneros.
+                    </p>
+                    <button type="button" class="btn btn-primary cta-btn">
+                        Ir a Novedades
+                    </button>
+                </div>
+            </div>
+
+            <div class="N-books-wrapper">
+              <div class="N-book-card">
+                <div class="book-cover">
+                  <img
+                    class="book-image"
+                    src="./assets/img/Libros/una-chica-como-ella.jpeg"
+                    alt="Cover del libro 'Volver a empezar'"
+                  />
+                </div>
+                <div class="book-name">Una chica como ella</div>
+                <div class="book-author">Marc Levy</div>
+                <div class="book-price">$ 200.00 MXN</div>
+              </div>
+              <div class="N-book-card">
+                <div class="book-cover">
+                  <img
+                    class="book-image"
+                    src="./assets/img/Libros/un-barbaro-en-paris.jpeg"
+                    alt="Cover del libro 'Un bárbaro en París'"
+                  />
+                </div>
+                <div class="book-name">Un bárbaro en París</div>
+                <div class="book-author">Mario Vargas Llosa</div>
+                <div class="book-price">$ 350.00 MXN</div>
+              </div>
+              <div class="N-book-card">
+                <div class="book-cover">
+                  <img
+                    class="book-image"
+                    src="./assets/img/Libros/tres-meses.png"
+                    alt="Cover del libro 'Tres meses'"
+                  />
+                </div>
+                <div class="book-name">Tres meses</div>
+                <div class="book-author">Joana Marcús</div>
+                <div class="book-price">$ 370.00 MXN</div>
+              </div>
+            </div>
+
+            <div class="N-wavy-light-blue">
+              <img
+                id="N-wavy-light-blue"
+                src="./assets/img/SVGs/N-wavy-shape.svg"
+                alt="Wavy light blue"
+              />
+            </div>
+          </section>
+
+          <!-- Section: Descuentos -->
+          <section id="section-descuentos">
+            <div class="D-img">
+              <img
+                src="./assets/img/Libros/libros-seccion-descuento-2.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="D-text-wrapper d-flex align-items-center justify-content-center flex-column flex-start"
+            >
+              <div>
+                <h2 class="subtitle">50% de descuento</h2>
+                <p>
+                  Haz crecer tu colección de libros sin gastar mucho dinero.
+                  Encuentra los mejores descuentos en nuestros libros más populares.
                 </p>
                 <button type="button" class="btn btn-primary cta-btn">
-                    Ir a Novedades
+                  Ver descuentos
                 </button>
+              </div>
             </div>
-        </div>
+            <!-- </div> -->
 
-        <div class="N-books-wrapper">
-          <div class="N-book-card">
-            <div class="book-cover">
+            <div class="D-big-dark-blue-wavy-wrapper">
               <img
-                class="book-image"
-                src="./assets/img/Libros/una-chica-como-ella.jpeg"
-                alt="Cover del libro 'Volver a empezar'"
+                id="D-big-dark-blue-wavy"
+                src="./assets/img/SVGs/big-dark-blue-wavy.svg"
+                alt="dark-blue-wavy"
               />
             </div>
-            <div class="book-name">Una chica como ella</div>
-            <div class="book-author">Marc Levy</div>
-            <div class="book-price">$ 200.00 MXN</div>
-          </div>
-          <div class="N-book-card">
-            <div class="book-cover">
+
+            <div class="D-big-dark-blue-wavy-wrapper">
               <img
-                class="book-image"
-                src="./assets/img/Libros/un-barbaro-en-paris.jpeg"
-                alt="Cover del libro 'Un bárbaro en París'"
+                id="D-big-light-blue-wavy"
+                src="./assets/img/SVGs/big-light-blue-wavy.svg"
+                alt="light-blue-wavy"
               />
             </div>
-            <div class="book-name">Un bárbaro en París</div>
-            <div class="book-author">Mario Vargas Llosa</div>
-            <div class="book-price">$ 350.00 MXN</div>
-          </div>
-          <div class="N-book-card">
-            <div class="book-cover">
+          </section>
+
+          <!-- Section: Best Sellers -->
+          <section id="section-best-sellers">
+
+            <div class="N-text-wrapper">
+
+              <div>  
+                <h2 class="subtitle">Bestsellers</h2>
+                <p class="paragraph-section">
+                    No te pierdas nuestros libros más vendidos de todos los tiempos y
+                    descubre por qué son los favoritos de nuestros clientes.
+                </p>
+                <button type="button" class="btn btn-primary cta-btn">
+                    Ir a Bestsellers
+                </button>
+              </div>  
+
+            </div>
+
+            <div class="N-books-wrapper">
+                
+                <div class="N-book-card">
+                    <div class="book-cover">
+                    <img
+                        class="book-image"
+                        src="./assets/img/Libros/the-design-of-everyday-things.jpeg"
+                        alt="Cover del libro 'El diseño de las cosas cotidianas'"
+                    />
+                    </div>
+                    <div class="book-name">The Design of Everyday Things</div>
+                    <div class="book-author">Donald Norman</div>
+                    <div class="book-price">$ 625.00 MXN</div>
+                </div>
+                <div class="N-book-card">
+                    <div class="book-cover">
+                    <img
+                        class="book-image"
+                        src="./assets/img/Header/atomic-habits-img-2.png"
+                        alt="Cover del libro 'Hábitos atómicos'"
+                    />
+                    </div>
+                    <div class="book-name">Hábitos atómicos</div>
+                    <div class="book-author">James Clear</div>
+                    <div class="book-price">$ 299.00 MXN</div>
+                </div>
+                <div class="N-book-card">
+                    <div class="book-cover">
+                    <img
+                        class="book-image"
+                        src="./assets/img/Libros/por-que-dormimos.jpeg"
+                        alt="Cover del libro '¿Por qué dormimos?'"
+                    />
+                    </div>
+                    <div class="book-name">¿Por qué dormimos?</div>
+                    <div class="book-author">Matthew Walker</div>
+                    <div class="book-price">$ 360.00 MXN</div>
+                </div>
+
+            </div>
+
+            <div class="BS-shapes">
+              
               <img
-                class="book-image"
-                src="./assets/img/Libros/tres-meses.png"
-                alt="Cover del libro 'Tres meses'"
+                id="BS-right-wavy-shape"
+                src="./assets/img/SVGs/BS-right-wavy-shape.svg"
+                alt="Right wavy shape"
+              />
+              
+            </div>
+          </section>
+
+          <!-- Section: Article Blog -->
+          <section id="section-article-blog">
+            <div class="AB-img-wrapper">
+              <img
+                class="AB-image"
+                src="./assets/img/PNGs/unsplash_apcUIqOPEIo.png"
+                alt=""
               />
             </div>
-            <div class="book-name">Tres meses</div>
-            <div class="book-author">Joana Marcús</div>
-            <div class="book-price">$ 370.00 MXN</div>
-          </div>
-        </div>
 
-        <div class="N-wavy-light-blue">
-          <img
-            id="N-wavy-light-blue"
-            src="./assets/img/SVGs/N-wavy-shape.svg"
-            alt="Wavy light blue"
-          />
-        </div>
-      </section>
-
-      <!-- Section: Descuentos -->
-      <section id="section-descuentos">
-        <div class="D-img">
-          <img
-            src="./assets/img/Libros/libros-seccion-descuento-2.png"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="D-text-wrapper d-flex align-items-center justify-content-center flex-column flex-start"
-        >
-          <div>
-            <h2 class="subtitle">50% de descuento</h2>
-            <p>
-              Haz crecer tu colección de libros sin gastar mucho dinero.
-              Encuentra los mejores descuentos en nuestros libros más populares.
-            </p>
-            <button type="button" class="btn btn-primary cta-btn">
-              Ver descuentos
-            </button>
-          </div>
-        </div>
-        <!-- </div> -->
-
-        <div class="D-big-dark-blue-wavy-wrapper">
-          <img
-            id="D-big-dark-blue-wavy"
-            src="./assets/img/SVGs/big-dark-blue-wavy.svg"
-            alt="dark-blue-wavy"
-          />
-        </div>
-
-        <div class="D-big-dark-blue-wavy-wrapper">
-          <img
-            id="D-big-light-blue-wavy"
-            src="./assets/img/SVGs/big-light-blue-wavy.svg"
-            alt="light-blue-wavy"
-          />
-        </div>
-      </section>
-
-      <!-- Section: Best Sellers -->
-      <section id="section-best-sellers">
-
-        <div class="N-text-wrapper">
-
-          <div>  
-            <h2 class="subtitle">Bestsellers</h2>
-            <p class="paragraph-section">
-                No te pierdas nuestros libros más vendidos de todos los tiempos y
-                descubre por qué son los favoritos de nuestros clientes.
-            </p>
-            <button type="button" class="btn btn-primary cta-btn">
-                Ir a Bestsellers
-            </button>
-          </div>  
-
-        </div>
-
-        <div class="N-books-wrapper">
-            
-            <div class="N-book-card">
-                <div class="book-cover">
-                <img
-                    class="book-image"
-                    src="./assets/img/Libros/the-design-of-everyday-things.jpeg"
-                    alt="Cover del libro 'El diseño de las cosas cotidianas'"
-                />
-                </div>
-                <div class="book-name">The Design of Everyday Things</div>
-                <div class="book-author">Donald Norman</div>
-                <div class="book-price">$ 625.00 MXN</div>
-            </div>
-            <div class="N-book-card">
-                <div class="book-cover">
-                <img
-                    class="book-image"
-                    src="./assets/img/Header/atomic-habits-img-2.png"
-                    alt="Cover del libro 'Hábitos atómicos'"
-                />
-                </div>
-                <div class="book-name">Hábitos atómicos</div>
-                <div class="book-author">James Clear</div>
-                <div class="book-price">$ 299.00 MXN</div>
-            </div>
-            <div class="N-book-card">
-                <div class="book-cover">
-                <img
-                    class="book-image"
-                    src="./assets/img/Libros/por-que-dormimos.jpeg"
-                    alt="Cover del libro '¿Por qué dormimos?'"
-                />
-                </div>
-                <div class="book-name">¿Por qué dormimos?</div>
-                <div class="book-author">Matthew Walker</div>
-                <div class="book-price">$ 360.00 MXN</div>
+            <div class="AB-text-wrapper">
+              <div>
+                <h2 class="subtitle">Las ventajas de los resúmenes de libros</h2>
+                <p>
+                  ¿No tienes tiempo para leer? Descubre cómo los resúmenes de libros
+                  pueden ayudarte a absorber la información clave de tus lecturas
+                  favoritas en minutos. En este artículo, exploramos...
+                </p>
+                <button type="button" class="btn btn-primary cta-btn">
+                  Leer ahora
+                </button>
+              </div>
             </div>
 
-        </div>
-
-        <div class="BS-shapes">
-          
-          <img
-            id="BS-right-wavy-shape"
-            src="./assets/img/SVGs/BS-right-wavy-shape.svg"
-            alt="Right wavy shape"
-          />
-          
-        </div>
-      </section>
-
-      <!-- Section: Article Blog -->
-      <section id="section-article-blog">
-        <div class="AB-img-wrapper">
-          <img
-            class="AB-image"
-            src="./assets/img/PNGs/unsplash_apcUIqOPEIo.png"
-            alt=""
-          />
-        </div>
-
-        <div class="AB-text-wrapper">
-          <div>
-            <h2 class="subtitle">Las ventajas de los resúmenes de libros</h2>
-            <p>
-              ¿No tienes tiempo para leer? Descubre cómo los resúmenes de libros
-              pueden ayudarte a absorber la información clave de tus lecturas
-              favoritas en minutos. En este artículo, exploramos...
-            </p>
-            <button type="button" class="btn btn-primary cta-btn">
-              Leer ahora
-            </button>
-          </div>
-        </div>
-
-        <div class="AB-circles">
-          <img
-            id="AB-circles"
-            src="./assets/img/SVGs/Art-circle-shapes.svg"
-            alt="Circles"
-          />
-        </div>
-
-      </section>
-
-      <!-- Section: Comentarios Clientes -->
-      <section id="section-comentarios-clientes">
-
-            <div class="CC-text-wrapper">
-              <h2 class="subtitle">Comentarios de nuestros clientes</h2>
-              <p>
-                No te pierdas nuestros libros más vendidos de todos los tiempos
-                y descubre por qué son los favoritos de nuestros clientes.
-              </p>
+            <div class="AB-circles">
+              <img
+                id="AB-circles"
+                src="./assets/img/SVGs/Art-circle-shapes.svg"
+                alt="Circles"
+              />
             </div>
-    
-          <div class="CC-reviews-wrapper">
 
-            <div class=review-impar-photo>
-                <div class="review-impar">
-                    <p class="comment-theresa-webb">
-                        "Estoy muy satisfecha con mi compra en línea. La variedad de títulos es impresionante y el proceso de compra fue rápido y fácil.”
+          </section>
+
+          <!-- Section: Comentarios Clientes -->
+          <section id="section-comentarios-clientes">
+
+                <div class="CC-text-wrapper">
+                  <div>
+                    <h2 class="subtitle">Comentarios de nuestros clientes</h2>
+                    <p>
+                      No te pierdas nuestros libros más vendidos de todos los tiempos
+                      y descubre por qué son los favoritos de nuestros clientes.
                     </p>
-
-                    <p class="name-costumer">
-                        Theresa Webb
-                    </p>
-
+                  </div>
+                </div>
+        
+              <div class="CC-reviews-wrapper">
+                <div class=review-impar-photo>
+                  <div class="photo-costumer-wrapper">
                     <img class="photo-costumer" src="./assets/img/PNGs/foto-de-cliente.png" alt="photo-cliente-1">
+                  </div>
+                  <div class="review-impar">
+                      <p class="comment-theresa-webb">
+                          "Estoy muy satisfecha con mi compra en línea. La variedad de títulos es impresionante y el proceso de compra fue rápido y fácil.”
+                      </p>
 
+                      <p class="name-costumer">
+                          Theresa Webb
+                      </p>
+                  </div>  
                 </div>
-            </div>
 
-            <div class=review-par-photo>
-                <div class="review-par">
-                    <p class="comment-devon-lane">
-                        “¡Qué gran experiencia de compra en línea! Encontré el libro que estaba buscando fácilmente y el proceso de pago fue seguro y sin problemas.”
-                    </p>
-
-                    <p class="name-costumer">
-                        Devon Lane
-                    </p>
-
+                <div class=review-par-photo>
+                  <div class="photo-costumer-wrapper">
                     <img class="photo-costumer" src="./assets/img/PNGs/foto-de-cliente-2.png" alt="photo-cliente-2">
+                  </div>
+                  <div class="review-par">
+                      <p class="comment-devon-lane">
+                          “¡Qué gran experiencia de compra en línea! Encontré el libro que estaba buscando fácilmente y el proceso de pago fue seguro y sin problemas.”
+                      </p>
 
+                      <p class="name-costumer">
+                          Devon Lane
+                      </p>
+                  </div>
                 </div>
-            </div>
-            
-            <div class=review-impar-photo>
-                <div class="review-impar">
-                    <p class="comment-annette-black">
-                        “Bookland tiene una selección increíble de libros a precios muy competitivos. El proceso de compra es sencillo y el envío es rápido.”
-                    </p>
-
-                    <p class="name-costumer">
-                        Annette Black
-                    </p>
-
+                
+                <div class=review-impar-photo>
+                    <div class="photo-costumer-wrapper">
                     <img  class="photo-costumer" src="./assets/img/PNGs/foto-de-cliente-3.png" alt="photo-cliente-3">
+                    </div>
+                    <div class="review-impar">
+                        <p class="comment-annette-black">
+                            “Bookland tiene una selección increíble de libros a precios muy competitivos. El proceso de compra es sencillo y el envío es rápido.”
+                        </p>
 
-                </div>
-            </div>
-            
-          </div>
+                        <p class="name-costumer">
+                            Annette Black
+                        </p>
 
-        <div class="CC-wavy-light-blue">
-          <img
-            id="CC-wavy-light-blue"
-            src="./assets/img/SVGs/SC-wavy-light-blue.svg"
-            alt="Wavy light blue"
-          />
-       
-      </section>
+                    </div> 
+                </div>  
+              </div>
+
+            <div class="CC-wavy-light-blue">
+              <img
+                id="CC-wavy-light-blue"
+                src="./assets/img/SVGs/SC-wavy-light-blue.svg"
+                alt="Wavy light blue"
+              />
+          
+          </section>
+
+      <!-- </div> -->
 
     </main>
 
@@ -451,5 +456,7 @@
         <p>Copyright 2023. Bookland Todos los derechos reservados</p>
       </div>
     </footer>
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>

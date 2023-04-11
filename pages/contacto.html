@@ -20,85 +20,109 @@
 
   <body>
     <!-- Cabecera -->
-    <header class="d-flex justify-content-around">
-      <!-- Lista desordenada de navagación -->
-      <nav
-        class="navbar d-flex justify-content-around align-items-center w-100"
-      >
-        <div>
-          <a href="../index.html">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container fluid">
+          <!-- Logotipo -->
+          <a class="navbar-brand" href="#">
             <img
               src="../assets/img/Logo/blue-logo.svg"
               width="100px"
               alt="Logo Bookland"
             />
           </a>
-        </div>
-        <ul
-          class="navbar-menu color-dark-blue d-flex justify-content-evenly w-50"
-        >
-          <li>
-            <a class="link-navbar" href="../index.html">Inicio</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./libros.html">Libros</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./autores.html">Autores</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="#">Contacto</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./blog.html">Blog</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center">
-          <img
-            src="../assets/img/Iconos/carrito.svg"
-            width="24px"
-            alt="Carrito de compra"
-          />
-          <p class="mb-0 ms-4">Mi cuenta</p>
+
+          <!-- Botón del menú -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Elementos del menú colapsable -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul
+              class="ul-gap navbar-nav mb-2 mb-lg-0 justify-content-center align-items-center w-75"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/libros.html">Libros</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/autores.html">Autores</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contacto</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <div class="carrito-mi-cuenta-wrapper d-flex align-items-center">
+              <img
+                src="../assets/img/Iconos/carrito.svg"
+                width="24px"
+                alt="Carrito de compra"
+              />
+              <p class="mb-0 ms-4">Mi cuenta</p>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
+      <!-- Invitación a la tienda física -->
       <section id="contacto-ubicacion">
-
-          <div class="C-text-wrapper">
+        <div class="C-text-wrapper">
+          <div>
             <h1 class="title-contacto">
-                  Te esperamos en nuestra tienda física
+              Te esperamos en nuestra tienda física
             </h1>
             <p>
-                  ¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría saber de ti!
-                  Puedes ponerte en contacto con nuestro equipo de atención al
-                  cliente en cualquier momento a través de nuestro formulario de
-                  contacto en línea.
+              Sumérgete en el maravilloso mundo de la literatura en nuestra
+              tienda de libros física. Descubre miles de títulos en una amplia
+              variedad de géneros y encuentra el libro perfecto para ti.
             </p>
-            <p class="contact-paragraph-thanks">
-                  ¡Gracias por elegir Bookland en línea y esperamos poder ayudarte
-                  pronto!
-            </p>
-          </div>
-
-          <div class="contacto-mapa-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx"
-              width="400"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
+
+        <div class="bookstore-illustration">
+          <div class="bookstore-illustration-wrapper">
+            <img
+              class="bs-illustration"
+              src="../assets/img/Header/bookstore-illustration.png"
+              alt="bookstore-illustration"
+            />
+          </div>
+        </div>
+
+        <!--
+            <div class="contacto-mapa-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            -->
 
         <div class="contact-wavies-wrapper">
           <img
@@ -106,14 +130,39 @@
             src="../assets/img/SVGs/C-left-top-wavy.svg"
             alt="wavy-light-blue"
           />
-          <img
-            id="contact-right-bottom-wavy"
-            src="../assets/img/SVGs/C-right-bottom-wavy.svg"
-            alt="wavy-light-blue"
-          />
+
+          <!-- <img
+                id="contact-right-bottom-wavy"
+                src="../assets/img/SVGs/C-right-bottom-wavy.svg"
+                alt="wavy-light-blue"
+              />
+              -->
         </div>
       </section>
 
+      <!-- Mapa -->
+      <section id="section-mapa-wrapper">
+        <div>
+          <h2 class="map-title">¿Dónde nos encontramos?</h2>
+          <p></p>
+        </div>
+
+        <div
+          class="mapa-wrapper d-flex align-items-center justify-content-center"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Colocar etiqueta form -->
       <section id="section-contacto-formulario">
         <div class="blue-space-left">
           <img

@@ -1,0 +1,488 @@
+/* Estilos de la Hero Home Index */
+
+section {
+    height: 100vh;
+}
+
+.hero-image-home img {
+    width: 100%;
+    max-width: 430px;
+    margin-left: -100px;
+}
+
+#hero-home {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text-wrapper div:first-child{
+    max-width: 580px;
+}
+
+.title-hero-home {
+    font-size: 64px;
+    font-weight: bold;
+    color: $color-font-titles;
+    margin-bottom: 16px;
+}
+
+.home-paragraph-wrapper {
+    max-width: 500px;
+}
+
+.hero-image-home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.book-image {
+    object-fit: cover;
+    height: 100%;
+    box-shadow: 5px 6px 5px 1px rgba(0,0,0,0.31);
+}
+.cta-btn {
+    background-color: #1F3F66;
+    margin-top: 40px;
+    border: 0;
+    border-radius: 32px;
+    padding: 12px 32px;
+}
+
+.cta-btn:hover, .cta-btn:active {
+    background-color: #9CBFE9 !important;
+}
+
+.hero-dots-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-wavys-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/SVGs/hero-wavy-shapes.svg");
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+#hero-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.paragraph-section {
+    font-size: 16px;
+    font-weight: regular;
+    color: #424242;
+    margin: 8px 0 0 0;
+}
+
+/* Responsive de la Hero Home Index */
+@media screen and (max-width: 991px) {
+    #hero-home {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Section Novedades Index */
+
+#section-novedades {
+    position: relative; 
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    height: 100vh;
+}
+
+.N-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.N-text-wrapper div:first-child {
+    max-width: 409px;
+}
+
+.N-books-wrapper {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.N-book-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-cover {
+    width: 250px;
+    height: 312px;
+    /* overflow: hidden; */
+    text-align: center;
+}
+.book-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F3F66;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.book-author {
+    margin-top: 8px;
+}
+
+.book-price {
+    font-size: 24px;
+    color: #1F3F66;
+    margin-top: 24px;
+}
+
+.N-wavy-light-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+#N-wavy-light-blue {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Responsive de la Sección Novedades Index */
+@media screen and (max-width: 991px) {
+    #section-novedades {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.45fr;
+    }
+}
+
+
+
+/* Section descuentos Index */
+
+#section-descuentos {
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+.D-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.D-img img {
+    width: 684px;
+    height: 684px;
+}
+
+.D-text-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.D-text-wrapper div:first-child {
+    max-width: 529px;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: $color-font-titles;
+    margin-bottom: 16px;
+}
+
+.D-big-dark-blue-wavy-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: -2;
+}
+
+#D-big-dark-blue-wavy {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.D-big-light-blue-wavy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+}
+
+#D-big-light-blue-wavy {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: -32px;
+}
+
+/* Responsive de la Sección Descuentos Index */
+@media screen and (max-width: 991px) {
+    #section-descuentos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.3fr;
+    }
+}
+
+
+
+/* Section: Bestsellers Index */
+#section-best-sellers {
+    position: relative; 
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+#BS-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+#BS-right-wavy-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Responsive de la Sección Best Sellers Index */
+@media screen and (max-width: 991px) {
+    #section-best-sellers {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.5fr;
+    }
+}
+
+
+
+/* Section: Article Blog Index */
+#section-article-blog {
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+
+
+.AB-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.AB-text-wrapper div:first-child {
+    max-width: 529px;;
+}
+
+
+.AB-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    overflow: hidden;
+}
+
+.AB-image {
+    object-fit: cover;  
+    height: 100%; 
+}
+
+.AB-circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: -2;
+}
+#AB-circles {
+    position: absolute;
+    left: 1150px;
+    bottom: 0;
+}
+
+/* Responsive de la Sección Article Blog Index */
+@media screen and (max-width: 991px) {
+    #section-article-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1fr;
+    }
+
+    .AB-image {  
+        height: 100%; 
+        width: 100%;
+    }
+}
+
+
+
+
+/* Section: Comentarios Clientes Index */
+#section-comentarios-clientes {
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+.CC-text-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.CC-text-wrapper div:first-child {
+    max-width: 454px;
+}
+
+.CC-reviews-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    color: #ededed;
+    font-size: 14px;
+    padding: 40px auto;
+}
+
+.review-impar-photo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.review-impar {
+    background-color: #3771B8;
+    padding: 24px 40px;
+    border-radius: 16px;
+    max-width: 297px;
+    max-height: 208px;
+}
+
+.review-par-photo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-self: start;
+}
+
+.review-par {
+    background-color: #87AFE0;
+    padding: 24px 40px;
+    border-radius: 16px;
+    max-width: 297px;
+    max-height: 208px;
+}
+
+.name-costumer {
+    font-weight: bold;
+}
+
+.photo-costumer-wrapper {
+    max-width: 56px;
+    max-height: 56px;
+}
+
+.photo-costumer {
+    width: 100%;
+    height: 100%;
+}
+
+.CC-wavy-light-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: -2;
+}
+
+#CC-wavy-light-blue {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.color-dark-blue {
+    color: #1F3F66;
+}
+
+.copyright-wrapper {
+    margin-top: 58px;
+}
+
+/* Responsive de la Sección Comentarios Clientes Index */
+@media screen and (max-width: 991px) {
+    #section-comentarios-clientes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

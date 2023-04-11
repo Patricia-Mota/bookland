@@ -20,50 +20,66 @@
 
   <body>
     <!-- Cabecera -->
-    <header class="d-flex justify-content-around">
-      <!-- Lista desordenada de navagación -->
-      <nav
-        class="navbar d-flex justify-content-around align-items-center w-100"
-      >
-        <div>
-          <a href="../index.html">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container fluid">
+          <!-- Logotipo -->
+          <a class="navbar-brand" href="#">
             <img
               src="../assets/img/Logo/blue-logo.svg"
               width="100px"
               alt="Logo Bookland"
             />
           </a>
-        </div>
-        <ul
-          class="navbar-menu color-dark-blue d-flex justify-content-evenly w-50"
-        >
-          <li>
-            <a class="link-navbar" href="../index.html">Inicio</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./libros.html">Libros</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="#">Autores</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./contacto.html">Contacto</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./blog.html">Blog</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center">
-          <img
-            src="../assets/img/Iconos/carrito.svg"
-            width="24px"
-            alt="Carrito de compra"
-          />
-          <p class="mb-0 ms-4">Mi cuenta</p>
+
+          <!-- Botón del menú -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Elementos del menú colapsable -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul
+              class="ul-gap navbar-nav mb-2 mb-lg-0 justify-content-center align-items-center w-75"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/libros.html">Libros</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Autores</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <div class="carrito-mi-cuenta-wrapper d-flex align-items-center">
+              <img
+                src="../assets/img/Iconos/carrito.svg"
+                width="24px"
+                alt="Carrito de compra"
+              />
+              <p class="mb-0 ms-4">Mi cuenta</p>
+            </div>
+          </div>
         </div>
       </nav>
     </header>

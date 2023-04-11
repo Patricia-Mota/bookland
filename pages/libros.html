@@ -20,50 +20,66 @@
 
   <body>
     <!-- Cabecera -->
-    <header class="d-flex justify-content-around">
-      <!-- Lista desordenada de navagación -->
-      <nav
-        class="navbar d-flex justify-content-around align-items-center w-100"
-      >
-        <div>
-          <a href="../index.html">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container fluid">
+          <!-- Logotipo -->
+          <a class="navbar-brand" href="#">
             <img
               src="../assets/img/Logo/blue-logo.svg"
               width="100px"
               alt="Logo Bookland"
             />
           </a>
-        </div>
-        <ul
-          class="navbar-menu color-dark-blue d-flex justify-content-evenly w-50"
-        >
-          <li>
-            <a class="link-navbar" href="../index.html">Inicio</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="#">Libros</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./autores.html">Autores</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./contacto.html">Contacto</a>
-          </li>
-          <div>|</div>
-          <li>
-            <a class="link-navbar" href="./blog.html">Blog</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center">
-          <img
-            src="../assets/img/Iconos/carrito.svg"
-            width="24px"
-            alt="Carrito de compra"
-          />
-          <p class="mb-0 ms-4">Mi cuenta</p>
+
+          <!-- Botón del menú -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Elementos del menú colapsable -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul
+              class="ul-gap navbar-nav mb-2 mb-lg-0 justify-content-center align-items-center w-75"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Libros</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/autores.html">Autores</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <div>|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <div class="carrito-mi-cuenta-wrapper d-flex align-items-center">
+              <img
+                src="../assets/img/Iconos/carrito.svg"
+                width="24px"
+                alt="Carrito de compra"
+              />
+              <p class="mb-0 ms-4">Mi cuenta</p>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -71,17 +87,27 @@
     <main>
       <!-- Contenido principal de la página Libros -->
 
+      <!-- Banner-->
+      <div class="section-books-banner">
+        <img
+          class="banner-s-books"
+          src="../assets/img/Header/Banners/books-section-banner.png"
+          alt="section-books-banner"
+        />
+      </div>
       <!-- Sección Novedades-->
       <section id="section-novedades">
         <div class="N-text-wrapper">
-          <h2 class="subtitle">Novedades</h2>
-          <p class="paragraph-section">
-            Encuentra la próxima lectura que te obsesionará y mantente al día
-            con nuestras últimas novedades en libros de todos los géneros.
-          </p>
-          <button type="button" class="btn btn-primary cta-btn">
-            Ir a Novedades
-          </button>
+          <div>
+            <h2 class="subtitle">Novedades</h2>
+            <p class="paragraph-section">
+              Encuentra la próxima lectura que te obsesionará y mantente al día
+              con nuestras últimas novedades en libros de todos los géneros.
+            </p>
+            <button type="button" class="btn btn-primary cta-btn">
+              Ir a Novedades
+            </button>
+          </div>
         </div>
         <div class="N-books-wrapper">
           <div class="N-book-card">
@@ -126,14 +152,16 @@
       <!-- Sección Best Sellers-->
       <section id="section-best-sellers">
         <div class="N-text-wrapper">
-          <h2 class="subtitle">Bestsellers</h2>
-          <p class="paragraph-section">
-            No te pierdas nuestros libros más vendidos de todos los tiempos y
-            descubre por qué son los favoritos de nuestros clientes.
-          </p>
-          <button type="button" class="btn btn-primary cta-btn">
-            Ir a Bestsellers
-          </button>
+          <div>
+            <h2 class="subtitle">Bestsellers</h2>
+            <p class="paragraph-section">
+              No te pierdas nuestros libros más vendidos de todos los tiempos y
+              descubre por qué son los favoritos de nuestros clientes.
+            </p>
+            <button type="button" class="btn btn-primary cta-btn">
+              Ir a Bestsellers
+            </button>
+          </div>
         </div>
         <div class="N-books-wrapper">
           <div class="N-book-card">
