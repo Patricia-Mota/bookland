@@ -201,6 +201,9 @@ section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     height: 100vh;
+    background-image: url("../assets/img/PNGs/wavys-section-descuento.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 
 .D-img {
@@ -213,8 +216,9 @@ section {
 }
 
 .D-img img {
-    width: 684px;
-    height: 684px;
+    width: 660px;
+    height: 660px;
+    margin-bottom: 120px;
 }
 
 .D-text-wrapper {
@@ -227,6 +231,7 @@ section {
 
 .D-text-wrapper div:first-child {
     max-width: 529px;
+    margin-bottom: 120px;
 }
 
 .subtitle {
