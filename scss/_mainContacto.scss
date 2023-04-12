@@ -40,26 +40,32 @@
     height: 100%;
 }
 
+#section-mapa-wrapper {
+    background-color: #ededed;
+    height: auto;
+    margin-bottom: 80px;
+}
+
 
 .map-title {
-    font-size: 56px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: normal;
     color: #2A568C;
     text-align: center;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-bottom: 0px;
 }
 
-
-/*
-.contacto-mapa-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
+.mapa-wrapper {
+    padding-bottom: 80px;
 }
-*/
+    
+
+
+.map {
+    flex-grow: 1;
+}
 
 .title-contacto {
     font-size: 44px;

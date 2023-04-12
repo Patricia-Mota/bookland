@@ -51,11 +51,11 @@ header {
   font-weight: bold;
 }
 
-/* Estilos de la Hero Home Index */
 section {
   height: 100vh;
 }
 
+/* Estilos de la Hero Home Index */
 .hero-image-home img {
   width: 100%;
   max-width: 430px;
@@ -576,24 +576,30 @@ section {
   height: 100%;
 }
 
-.map-title {
-  font-size: 56px;
-  font-weight: bold;
-  color: #2A568C;
-  text-align: center;
-  margin-top: 64px;
-  margin-bottom: 64px;
+#section-mapa-wrapper {
+  background-color: #ededed;
+  height: auto;
+  margin-bottom: 80px;
 }
 
-/*
-.contacto-mapa-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
+.map-title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #2A568C;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-bottom: 0px;
 }
-*/
+
+.mapa-wrapper {
+  padding-bottom: 80px;
+}
+
+.map {
+  flex-grow: 1;
+}
+
 .title-contacto {
   font-size: 44px;
   font-weight: bold;
