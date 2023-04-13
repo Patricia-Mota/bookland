@@ -14,9 +14,8 @@ header {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   z-index: 1;
-  backdrop-filter: blur(5px);
 }
 
 /* Estilos nav */
@@ -44,29 +43,11 @@ header {
   align-items: end;
 }
 
-.nl {
-  color: #1F3F66 !important;
-  position: relative;
+.nav-link {
+  color: #1F3F66;
 }
 
-.nl::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 8px;
-  left: 10%;
-  width: 80%;
-  height: 3px;
-  background-color: #1F3F66;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.nl:hover::before {
-  transform: scaleX(1);
-}
-
-.nl.active {
+.nav-link.active {
   font-weight: bold;
 }
 
@@ -301,7 +282,7 @@ section {
 }
 
 .subtitle {
-  font-size: 56px;
+  font-size: 40px;
   font-weight: bold;
   color: #1F3F66;
   margin-bottom: 16px;
@@ -555,43 +536,34 @@ section {
 }
 
 /*Estilos Sección Autores */
-#autores-destacados {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-}
-
-.AD-title-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.principal-title-autores {
+  font-size: 44px;
+  font-weight: bold;
+  color: #1F3F66;
 }
 
 .cards-autores-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .card-autora {
   width: 30%;
-  height: 320px;
   /*Estilos - card */
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(230, 243, 255);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+  border: 1px solid rgb(230, 243, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .card-autora img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -611,7 +583,7 @@ section {
 }
 
 .C-text-wrapper div:first-child {
-  max-width: 650px;
+  max-width: 520px;
 }
 
 .bookstore-illustration {
