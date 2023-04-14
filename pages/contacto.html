@@ -16,6 +16,11 @@
     />
     <!-- Estilos-->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- Iconos -->
+    <script
+      src="https://kit.fontawesome.com/d3c2937a4b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -53,19 +58,19 @@
               <li class="nav-item">
                 <a class="nav-link nl" href="../index.html">Inicio</a>
               </li>
-              <div>|</div>
+
               <li class="nav-item">
                 <a class="nav-link nl" href="../pages/libros.html">Libros</a>
               </li>
-              <div>|</div>
+
               <li class="nav-item">
                 <a class="nav-link nl" href="../pages/autores.html">Autores</a>
               </li>
-              <div>|</div>
+
               <li class="nav-item">
                 <a class="nav-link active nl" href="#">Contacto</a>
               </li>
-              <div>|</div>
+
               <li class="nav-item">
                 <a class="nav-link nl" href="../pages/blog.html">Blog</a>
               </li>
@@ -107,47 +112,11 @@
             />
           </div>
         </div>
-
-        <!--
-            <div class="contacto-mapa-wrapper">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx"
-                width="400"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            -->
-
-        <div class="contact-wavies-wrapper">
-          <img
-            id="contact-left-top-wavy"
-            src="../assets/img/SVGs/C-left-top-wavy.svg"
-            alt="wavy-light-blue"
-          />
-
-          <!-- <img
-                id="contact-right-bottom-wavy"
-                src="../assets/img/SVGs/C-right-bottom-wavy.svg"
-                alt="wavy-light-blue"
-              />
-              -->
-        </div>
       </section>
 
       <!-- Mapa -->
-      <section id="section-mapa-wrapper">
-        <div>
-          <h2 class="map-title">¿Dónde nos encontramos?</h2>
-          <p></p>
-        </div>
-
-        <div
-          class="mapa-wrapper d-flex align-items-center justify-content-center"
-        >
+      <section id="section-mapa">
+        <div class="mapa-wrapper">
           <iframe
             class="map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15058.207910013698!2d-99.1706088!3d19.345238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffe6e2ed5ecf%3A0x5668d72983d5979!2sLibreria%20Bonilla!5e0!3m2!1ses!2smx!4v1677227414159!5m2!1ses!2smx"
@@ -161,22 +130,11 @@
         </div>
       </section>
 
-      <!-- Colocar etiqueta form -->
+      <!-- Formulario -->
       <section id="section-contacto-formulario">
-        <div class="blue-space-left">
-          <img
-            id="white-circles"
-            src="../assets/img/SVGs/middle-white-circle.svg"
-            alt="middle-white-circles"
-          />
-          <img
-            id="C-left-wavy-shape"
-            src="../assets/img/SVGs/N-wavy-shape.svg"
-            alt=""
-          />
-        </div>
+        <div class="books-pattern"></div>
         <div class="contacto-formulario-wrapper">
-          <h2>ontáctanos</h2>
+          <h2>Contáctanos</h2>
           <form action="">
             <div>
               <label for="" class="form-label">Nombre</label>
@@ -225,7 +183,7 @@
     </main>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="footer">
       <div class="d-flex justify-content-around">
         <div>
           <img
@@ -237,12 +195,17 @@
 
         <div>
           <p>Síguenos</p>
-          <div>
-            <img src="../assets/img/Iconos/facebook.svg" alt="Logo Facebook" />
-            <img
-              src="../assets/img/Iconos/instagram.svg"
-              alt="Logo Instagram"
-            />
+          <div class="social-media-icons-wrapper">
+            <a
+              href="https://www.facebook.com/LibreriaBonillaMX/?locale=es_LA"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/libreriabonilla/?hl=es"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
 
@@ -269,5 +232,12 @@
         <p>Copyright 2023. Bookland Todos los derechos reservados</p>
       </div>
     </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

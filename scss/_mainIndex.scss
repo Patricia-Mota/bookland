@@ -16,6 +16,10 @@ section {
     grid-template-columns: 1fr 1fr;
     height: calc(100vh - 60px);
     width: 100%;
+    background-image: url(../assets/img/SVGs/wavys-hero-home.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 
 .hero-text-wrapper {
@@ -35,6 +39,10 @@ section {
     font-weight: bold;
     color: $color-font-titles;
     margin-bottom: 16px;
+}
+
+.color-perfect {
+    color: #2A568C;
 }
 
 .home-paragraph-wrapper {
@@ -65,6 +73,10 @@ section {
 
 .cta-btn:hover, .cta-btn:active {
     background-color: #9CBFE9 !important;
+}
+
+.wavys-hero-home {
+    z-index: -2;
 }
 
 .hero-dots-wrapper {

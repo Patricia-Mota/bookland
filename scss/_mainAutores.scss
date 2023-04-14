@@ -1,10 +1,8 @@
 
 /*Estilos Sección Autores */
 
-#autores-destacados {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-
+#section-autores-destacados {
+    height: 100%;
 }
 
 .AD-title-wrapper {
@@ -15,30 +13,51 @@
     width: 100%;
 }
 
-.cards-autores-wrapper {
-    width: 100%;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-.card-autora {
-    width: 30%;
-    height: 320px;
-    /*Estilos - card */
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 8px;
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
-.card-autora img {
+.card .card-img, .card-v .card-img {
     width: 100%;
     height: 100%;
+    border-radius: 15px;
     object-fit: cover;
+    position: absolute;
+    transition: all 1s;
+    filter: brightness(65%);
+}
 
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.card, .card-v {
+    border-radius: 15px;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.card-v h3 {
+    position: relative;
+    top: 70%;
+    font-weight: 700;
+    font-size: 28px;
+    word-wrap: break-word;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
