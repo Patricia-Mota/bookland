@@ -41,10 +41,6 @@ section {
     margin-bottom: 16px;
 }
 
-.color-perfect {
-    color: #2A568C;
-}
-
 .home-paragraph-wrapper {
     max-width: 500px;
 }
@@ -97,12 +93,7 @@ section {
     z-index: -2;
 }
 
-#hero-dots {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-}
+
 
 .paragraph-section {
     font-size: 16px;
@@ -111,17 +102,107 @@ section {
     margin: 8px 0 0 0;
 }
 
-/* Responsive de la Hero Home Index */
-@media screen and (max-width: 991px) {
+/* Responsive mobile */
+@media (max-width: 576px) {
     #hero-home {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr;
+        height: calc(100vh - 60px);
+        width: 100%;
+        background-image: url(../assets/img/SVGs/wavys-hero-home.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
     }
+
+    .hero-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-text-wrapper div:first-child {
+        max-width: 415px;
+    }
+
+    .title-hero-home {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .paragraph-section {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #atomic-habits-img {
+        width: 240px;
+        height: 320px;
+        margin: auto;
+    }
+
+    .cta-btn {
+        margin-top: 32px;
+    }
+
+
+}
+
+/* Responsive Tablets */
+@media (max-width: 768px) {
+    #hero-home {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: calc(100vh - 60px);
+        width: 100%;
+        background-image: url(../assets/img/SVGs/wavys-hero-home.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    .hero-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-text-wrapper div:first-child {
+        max-width: 415px;
+    }
+
+    .title-hero-home {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .paragraph-section {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #atomic-habits-img {
+        width: 240px;
+        height: 320px;
+        margin: auto;
+    }
+
+    .cta-btn {
+        margin-top: 32px;
+    }
+
+
 }
 
 
 
-/* Section Novedades Index */
+/* Section Novedades */
 
 #section-novedades {
     position: relative; 
@@ -147,8 +228,9 @@ section {
     justify-content:center;
     align-items: center;
     width: 100%;
-    gap: 40px;
-    overflow: hidden;
+    gap: 64px;
+    margin: 40px auto;
+    
 }
 
 .N-book-card {
@@ -195,18 +277,45 @@ section {
     bottom: 0;
 }
 
-/* Responsive de la Sección Novedades Index */
-@media screen and (max-width: 991px) {
+/* Responsive Novedades Mobile */
+@media screen and (max-width: 576px) {
     #section-novedades {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.45fr;
+        grid-template-rows: auto;
+        margin-bottom: 0;
+        
+    }
+
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Responsive Novedades Tablets */
+@media (max-width: 768px) {
+    #section-novedades {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 0;
+    }
+
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
+    
 
-
-/* Section descuentos Index */
+/* Section Descuentos */
 
 #section-descuentos {
     position: relative; 
@@ -285,12 +394,66 @@ section {
     bottom: -32px;
 }
 
-/* Responsive de la Sección Descuentos Index */
-@media screen and (max-width: 991px) {
+/* Responsive Descuentos Mobile */
+@media screen and (max-width: 576px) {
     #section-descuentos {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.3fr;
+        height: auto;
+        
+    }
+
+    .D-img img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 40px;
+    
+    }
+
+    .D-text-wrapper {
+        margin-bottom: 150px;
+    }
+
+    .D-text-wrapper div:first-child {
+        max-width: 360px;
+    }
+
+    .paragraph-descuentos-index {
+        font-size: 14px;
+        text-align: center;
+    }
+  
+}
+
+/* Responsive Descuentos Tablets */
+@media (max-width: 768px) {
+    #section-descuentos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.3fr;
+        height: auto;
+        
+    }
+
+    .D-img img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 40px;
+    
+    }
+
+    .D-text-wrapper {
+        margin-bottom: 150px;
+    }
+
+    .D-text-wrapper div:first-child {
+        max-width: 360px;
+    }
+
+    .paragraph-descuentos-index {
+        font-size: 14px;
+        text-align: center;
     }
 }
 
@@ -319,18 +482,28 @@ section {
     bottom: 0;
 }
 
-/* Responsive de la Sección Best Sellers Index */
-@media screen and (max-width: 991px) {
+/* Responsive Best Sellers Mobile */
+@media screen and (max-width: 576px) {
     #section-best-sellers {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.5fr;
+        margin: 40px auto;
+    }  
+}
+
+/* Responsive Best Sellers Tablets */
+@media (max-width: 768px) {
+    #section-best-sellers {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.5fr;
+        margin: 40px auto;
     }
 }
 
 
-
-/* Section: Article Blog Index */
+/* Section Article Blog */
 #section-article-blog {
     position: relative; 
     display: grid;
@@ -381,12 +554,42 @@ section {
     bottom: 0;
 }
 
-/* Responsive de la Sección Article Blog Index */
-@media screen and (max-width: 991px) {
+/* Responsive Article Blog Mobile */
+@media screen and (max-width: 576px) {
     #section-article-blog {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.8fr 1fr;
+    }
+
+    .AB-text-wrapper div:first-child {
+        max-width: 400px;
+    }
+
+    .paragraph-article-blog {
+        text-align: center;
+    }
+
+    .AB-image {  
+        height: 100%; 
+        width: 100%;
+    }
+}
+
+/* Responsive Article Blog Tablets */
+@media (max-width: 768px) {
+    #section-article-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1fr;
+    }
+
+    .AB-text-wrapper div:first-child {
+        max-width: 400px;
+    }
+
+    .paragraph-article-blog {
+        text-align: center;
     }
 
     .AB-image {  
@@ -398,12 +601,13 @@ section {
 
 
 
-/* Section: Comentarios Clientes Index */
+/* Section Comentarios Clientes */
 #section-comentarios-clientes {
     position: relative; 
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    height: 100vh;
+    height: auto;
+    margin: 32px auto;
 }
 
 .CC-text-wrapper {
@@ -496,10 +700,36 @@ section {
     margin-top: 58px;
 }
 
-/* Responsive de la Sección Comentarios Clientes Index */
-@media screen and (max-width: 991px) {
+/* Responsive Comentarios Clientes Mobile */
+@media screen and (max-width: 576px) {
     #section-comentarios-clientes {
         display: grid;
         grid-template-columns: 1fr;
+        margin: 80px auto;
+    }
+
+    .paragraph-section {
+        margin-bottom: 40px;
+    }
+
+    .CC-wavy-light-blue {
+        top: 160px;
+    }
+}
+
+/* Responsive Comentarios CLientes Tablets */
+@media (max-width: 768px) {
+    #section-comentarios-clientes {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 80px auto;
+    }
+
+    .paragraph-section {
+        margin-bottom: 40px;
+    }
+
+    .CC-wavy-light-blue {
+        top: 160px;
     }
 }

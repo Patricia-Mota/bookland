@@ -93,15 +93,48 @@
 
     <main>
       <!-- Contenido principal de la página Libros -->
-
-      <!-- Banner-->
-      <div class="section-books-banner">
-        <img
-          class="banner-s-books"
-          src="../assets/img/Header/Banners/books-section-banner.png"
-          alt="section-books-banner"
-        />
+      <!-- Carrusel - Banners -->
+      <div class="bannersLibros">
+        <div id="carouselBannerLibros" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="gradient-banner"
+                src="../assets/img/Header/Banners/books-section-banner1.png"
+                class="d-block w-100"
+                alt="banner-1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="gradient-banner"
+                src="../assets/img/Header/Banners/books-section-banner2.png"
+                class="d-block w-100"
+                alt="banner-2"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselBannerLibros"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselBannerLibros"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+
       <!-- Sección Novedades-->
       <section id="section-novedades">
         <div class="N-text-wrapper">
@@ -159,7 +192,7 @@
       <!-- Sección Best Sellers-->
       <section id="section-best-sellers">
         <div class="N-text-wrapper">
-          <div>
+          <div class="content-text">
             <h2 class="subtitle">Bestsellers</h2>
             <p class="paragraph-section">
               No te pierdas nuestros libros más vendidos de todos los tiempos y
@@ -240,6 +273,7 @@
 
         <div>
           <p>Contáctanos</p>
+          <p>+52 56604987</p>
         </div>
 
         <div>

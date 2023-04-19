@@ -31,3 +31,34 @@ footer {
     margin: 0;
     transform: translateX(-32px);
 }
+
+/* Responsive Footer Mobile */
+@media screen and (max-width: 576px) {
+    .footer div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .copyright-wrapper {
+        text-align: center;
+    }
+
+}
+
+/* Responsive Footer Tablets */
+@media (max-width: 768px) {
+    .footer div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .copyright-wrapper {
+        text-align: center;
+    }
+}
