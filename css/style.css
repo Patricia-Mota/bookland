@@ -1435,6 +1435,12 @@ footer {
   .copyright-wrapper {
     text-align: center;
   }
+  .suscribete-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* Responsive Footer Tablets */
 @media (max-width: 768px) {
