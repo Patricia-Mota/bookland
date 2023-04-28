@@ -70,6 +70,22 @@ header {
   font-weight: bold;
 }
 
+/* Responsive Header Mobile */
+/*
+@media screen and (max-width: 576px) {
+    .carrito-mi-cuenta-wrapper {
+        position: relative;
+        left: 105px;
+        text-align: center;
+        margin-top: 48px;
+    }
+
+} */
+/* Responsive Header Tablets */
+/*
+@media (max-width: 768px) {
+
+} */
 section {
   height: 100vh;
 }
@@ -468,8 +484,8 @@ section {
     height: auto;
   }
   .D-img img {
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
     margin-bottom: 40px;
   }
   .D-text-wrapper {
