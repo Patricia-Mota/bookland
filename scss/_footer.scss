@@ -55,8 +55,8 @@ footer {
 
 }
 
-/* Responsive Footer Tablets */
-@media (max-width: 768px) {
+/* Responsive Footer Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
     .footer div:first-child {
         display: flex;
         flex-direction: column;
